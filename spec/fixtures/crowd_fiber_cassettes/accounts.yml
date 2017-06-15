@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin14.5.0 x86_64) ruby/2.3.4p301
+      Authorization:
+      - Token token=8ac5c06e40d8bce9b6eecd835da80e38
+      Host:
+      - localhost:3000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"559b4845fd2849f88b244a4217cfbf0a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - ahoy_visit=95f8bb71-e961-4b3b-8dfa-b9fe044cad15; path=/; expires=Thu, 15 Jun
+        2017 02:04:56 -0000
+      - ahoy_visitor=dc9db488-6d53-490d-8222-edfd87bbc128; path=/; expires=Sat, 15
+        Jun 2019 01:34:56 -0000
+      X-Request-Id:
+      - 10a4e783-3c55-4779-be56-ad24e02edbef
+      X-Runtime:
+      - '0.218637'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Connection:
+      - close
+      Server:
+      - thin
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAEDkQVkAA9yWUW+bMBCA/wpirw01OEkT3qZU2fZSaUvWSpuqyDE3sGbs
+        zDaJ0LT/viMZZYgkitS+hEess7nv43zH99++SPw4im58xrkulFsploMf+x9A
+        m1Qw76NIM8lUYr2ZlhJS8JtQzhyk2pR+fDiG3viSrUHi9i9gAcMNRnMttcGl
+        d/P5hBBSrbB8w0SqVvt347MBPClZMYdhEQnvBiQchHRJJjEl8ZAEQ0K/4b5i
+        k1wQ96dJ0DrmClunFzXpfVKMO7GFy5Khg4gsyTCORjENg4hMTiRzJA6T2cHa
+        Clc5zZzbxLe3Wa00gKTAiEN2YecTzMRWOFHkZ4yPGqRZYZ3O38746ELjozPG
+        wya996/wPb7Q97jtWxVS1nbpkQo3kGJRn7H7X8E8gkr0G7ml0+lFbvdxV+A2
+        oh2398xIoVKnlbfgmdbyGrtGxXjk+iYvbHaPFmCjfLnF0bDjYpFp48B4XxV+
+        JINnlT2SYQ9wrU4WjToOPheC/8Sed5XT4wT6r5op4Dpv4McnR+kDqsp2YNGX
+        8pbAMyU4k9c8V0+YSZXj7Yq460iZS10myI5L5b8eYXuk4EeFt9YQKHCNhkl3
+        xmttmffIEKj0HmDXJwe8Ytvu0RSSta/J9LyKmYFEuKpnatUjJXnJt7xoTQxK
+        Oiaq3nAvrAWO7+4RvUOupOZqlQPt/v0+CbXI2Aa8Oa5iHv0qhJ1QtqI7lMLz
+        XwAAAP//AwDFLJFriA0AAA==
+    http_version: 
+  recorded_at: Thu, 15 Jun 2017 01:34:56 GMT
+recorded_with: VCR 3.0.3
