@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/accounts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin14.5.0 x86_64) ruby/2.3.4p301
+      Authorization:
+      - Token token=8ac5c06e40d8bce9b6eecd835da80e38
+      Host:
+      - localhost:3000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fe0c2432b75d4811468f9cad3597837d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - ahoy_visit=2e59300b-e45f-49d1-819d-44a314bb36ed; path=/; expires=Thu, 15 Jun
+        2017 01:52:45 -0000
+      - ahoy_visitor=82129233-d80b-4a3b-8578-c714820574e9; path=/; expires=Sat, 15
+        Jun 2019 01:22:45 -0000
+      X-Request-Id:
+      - 3cb11be8-fc9b-41c6-9b47-776af7a9ebc7
+      X-Runtime:
+      - '0.741966'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Connection:
+      - close
+      Server:
+      - thin
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGXhQVkAA4ySQW/jIBCF/wt7bBIBtpOU065a9dJrTltFFrEnLRIGC4Zu
+        oyr/fYfErg9Jqxx58wa+N8MnMy1TYsZ00/jksHa6A6bYg3k3aFLHpkqjEV59
+        ODD1eWqqZszqHdjsThF9B4Hcjbc+kPTr6WnNOc+K7nptXl2dmySdA9BNba2R
+        bJKL1ZyLuSg2fK0Krkq+KHn1l/pS397gO14C1gPdqEfUmOKILSbsPw2ad7gN
+        sZhLvuGlkpUqxELy5TeIV3yE+A920SAN1iVrZ6wH31s6vQxIa6Ltg+k0we9N
+        iF9reNY28401q6fSw1swEY12ERxZoNPG1rptA0TKylodLDj43flgABEWxrML
+        jsZTbncYj2jQTrXLGci5qDayUJLnbGJ5n2eQceLVKExhSDBjUdtEKzDejXdf
+        y9iZtrUwiGfbD3Fj2u/Nx+2sqxXtYUtob97RI6nbQZioqzXlOGnUfycKKSvJ
+        ebXM3/es13joM8Yj7HWySHrrmq+fdaaADwQXTzGXZSFK6vUIQ/m4zc8P+zkN
+        bHv8DwAA//8DABnQuqN9AwAA
+    http_version: 
+  recorded_at: Thu, 15 Jun 2017 01:22:45 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/accounts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin14.5.0 x86_64) ruby/2.3.4p301
+      Authorization:
+      - Token token=8ac5c06e40d8bce9b6eecd835da80e38
+      Host:
+      - localhost:3000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"559b4845fd2849f88b244a4217cfbf0a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - ahoy_visit=451f4e50-5be9-4ccb-83ac-5f094a2062a9; path=/; expires=Thu, 15 Jun
+        2017 02:01:16 -0000
+      - ahoy_visitor=235261e6-637b-4b2e-96d6-35f76d0c4b2f; path=/; expires=Sat, 15
+        Jun 2019 01:31:16 -0000
+      X-Request-Id:
+      - aca1eb77-a5c2-4655-9bcb-f78c639e80a2
+      X-Runtime:
+      - '0.347444'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Connection:
+      - close
+      Server:
+      - thin
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGTjQVkAA9yWUW+bMBCA/wpirw01OEkT3qZU2fZSaUvWSpuqyDE3sGbs
+        zDaJ0LT/viMZZYgkitS+hEess7nv43zH99++SPw4im58xrkulFsploMf+x9A
+        m1Qw76NIM8lUYr2ZlhJS8JtQzhyk2pR+fDiG3viSrUHi9i9gAcMNRnMttcGl
+        d/P5hBBSrbB8w0SqVvt347MBPClZMYdhEQnvBiQchHRJJjEl8ZAEQ0K/4b5i
+        k1wQ96dJ0DrmClunFzXpfVKMO7GFy5Khg4gsyTCORjENg4hMTiRzJA6T2cHa
+        Clc5zZzbxLe3Wa00gKTAiEN2YecTzMRWOFHkZ4yPGqRZYZ3O38746ELjozPG
+        wya996/wPb7Q97jtWxVS1nbpkQo3kGJRn7H7X8E8gkr0G7ml0+lFbvdxV+A2
+        oh2398xIoVKnlbfgmdbyGrtGxXjk+iYvbHaPFmCjfLnF0bDjYpFp48B4XxV+
+        JINnlT2SYQ9wrU4WjToOPheC/8Sed5XT4wT6r5op4Dpv4McnR+kDqsp2YNGX
+        8pbAMyU4k9c8V0+YSZXj7Yq460iZS10myI5L5b8eYXuk4EeFt9YQKHCNhkl3
+        xmttmffIEKj0HmDXJwe8Ytvu0RSSta/J9LyKmYFEuKpnatUjJXnJt7xoTQxK
+        Oiaq3nAvrAWO7+4RvUOupOZqlQPt/v0+CbXI2Aa8Oa5iHv0qhJ1QtqI7lMLz
+        XwAAAP//AwDFLJFriA0AAA==
+    http_version: 
+  recorded_at: Thu, 15 Jun 2017 01:31:16 GMT
+recorded_with: VCR 3.0.3

@@ -2,8 +2,8 @@ class CrowdFiberApi::Private
   
   attr_reader :config
   
-  def initialize(config = nil)
-     if config.nil? || config[:api_key].nil?
+  def initialize(config = {})
+     if config.nil? || config[:api_key].nil? 
        raise ArgumentError.new(":api_key is a required argument to initialize Api")
      end
      
@@ -12,6 +12,8 @@ class CrowdFiberApi::Private
      end
      @config = config
    end
+
+  
 
 
   def accounts
