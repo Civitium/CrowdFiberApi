@@ -1,3 +1,5 @@
+require "CrowdFiberApi/private/account"
+
 class CrowdFiberApi::Private
   
   attr_reader :config
@@ -16,8 +18,8 @@ class CrowdFiberApi::Private
   
 
 
-  def accounts
-    CrowdFiberApi::Private::Accounts.new(@config)
+  def account
+    CrowdFiberApi::Private::Account.new(@config)
   end
 
 

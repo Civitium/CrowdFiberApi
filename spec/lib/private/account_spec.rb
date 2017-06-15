@@ -1,6 +1,6 @@
 describe "GET account" do
  
-  let(:account) { CrowdFiberApi::Private.new({api_key: ENV['CROWD_FIBER_API_KEY'], api_url: ENV['CROWD_FIBER_API_URL'] } ).accounts.find(1) }
+  let(:account) { CrowdFiberApi::Private.new({api_key: ENV['CROWD_FIBER_API_KEY'], api_url: ENV['CROWD_FIBER_API_URL'] } ).account.find(1) }
  
   before do
     VCR.insert_cassette 'account', :record => :new_episodes

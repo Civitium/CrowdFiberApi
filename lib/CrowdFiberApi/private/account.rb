@@ -1,6 +1,6 @@
 module CrowdFiberApi
   class Private
-    class Accounts < CrowdFiberApi::Private
+    class Account < CrowdFiberApi::Private
       attr_accessor :account
       attr_accessor :accounts
       
