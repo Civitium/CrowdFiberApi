@@ -1,3 +1,3 @@
-module CrowdFiberApi
+module CrowdFiber
   VERSION = "0.1.0"
 end
