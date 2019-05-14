@@ -1,4 +1,7 @@
 require "CrowdFiber/resources/order"
+require "CrowdFiber/resources/zone"
+require "CrowdFiber/resources/contact"
+require "CrowdFiber/resources/target"
 
 class CrowdFiber::Client
 
@@ -17,5 +20,17 @@ class CrowdFiber::Client
 
     def orders
       CrowdFiber::Resources::Order.new(config)
+    end
+
+    def zones
+      CrowdFiber::Resources::Zone.new(config)
+    end
+
+    def contacts
+      CrowdFiber::Resources::Contact.new(config)
+    end
+
+    def targets
+      CrowdFiber::Resources::Target.new(config)
     end
 end

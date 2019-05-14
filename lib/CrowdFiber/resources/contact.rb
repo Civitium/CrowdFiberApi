@@ -1,16 +1,15 @@
 require "CrowdFiber/resources/resource_base"
 
+
 module CrowdFiber
   module Resources
-    class Order < CrowdFiber::Resources::ResourceBase
-      VERB = "orders"
-      attr_accessor :order
-      attr_accessor :orders
+    class Contact < CrowdFiber::Resources::ResourceBase
+      VERB = "contacts"
 
       def initialize(config)
         super(config)
-        @endpoint = "orders"
       end
+
 
       def all
         make_get_request("api/v2/#{VERB}")

@@ -2,14 +2,11 @@ require "CrowdFiber/resources/resource_base"
 
 module CrowdFiber
   module Resources
-    class Order < CrowdFiber::Resources::ResourceBase
-      VERB = "orders"
-      attr_accessor :order
-      attr_accessor :orders
+    class Zone < CrowdFiber::Resources::ResourceBase
+      VERB = "zones"
 
       def initialize(config)
         super(config)
-        @endpoint = "orders"
       end
 
       def all
@@ -17,7 +14,7 @@ module CrowdFiber
       end
 
       def find(id)
-        OpenStruct.new(make_get_request("api/v2/#{VERB}/#{id}").first)
+        OpenStruct.new(make_get_request("api/v2/#{VERB}/#{id}"))
       end
 
       def count
@@ -25,11 +22,11 @@ module CrowdFiber
       end
 
       def last_id
-        make_get_request("api/v2/#{VERB}",{page: 1, per_page: 1})[0][:id]
+        make_get_request("api/v2/#{VERB}",{page: count, per_page: 1}).last['id']
       end
 
       def first_id
-        make_get_request("api/v2/#{VERB}",{page: count, per_page: 1})[0][:id]
+        make_get_request("api/v2/#{VERB}",{page: 1, per_page: 1}).last['id']
       end
 
       def first
@@ -39,6 +36,12 @@ module CrowdFiber
       def last
         find(last_id)
       end
+
+      def geojson(zone)
+        puts zone
+        OpenStruct.new(make_get_request("api/v2/#{VERB}/#{id}/geojson"))
+      end
+
     end
   end
 end
