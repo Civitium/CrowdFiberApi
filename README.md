@@ -1,16 +1,12 @@
 # CrowdFiberApi
 [![Build Status](https://travis-ci.org/Civitium/CrowdFiberApi.svg?branch=master)](https://travis-ci.org/Civitium/CrowdFiberApi)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/CrowdFiberApi`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'CrowdFiberApi'
+gem 'CrowdFiber'
 ```
 
 And then execute:
@@ -23,7 +19,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Initialization and Configuration
+
+```
+crowd_fiber = CrowdFiber::Client.new(api_key: "YOUR API KEY", api_url: "Site URL")
+```
+
+api_url will be the URL of your crowdfiber site. with protocol and tailing slash. (https://crowdfiber.com/)
+
+### Models supported
+
+1. orders
+2. zones
+3. contacts
+4. targets
+
+### Listing records
+
+```
+crowd_fiber.zones.list(page_number(optional), per_page(optional), params(optional))
+```
+
 
 ## Development
 
@@ -39,4 +55,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/civiti
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
